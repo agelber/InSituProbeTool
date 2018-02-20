@@ -7,8 +7,6 @@ Fakegene
 Pzp
 Aanat
 Aatk
-Aatk
-Aatk
 Abca1
 Abca4
 Abca2
