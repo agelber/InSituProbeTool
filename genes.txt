@@ -1,0 +1,14 @@
+Isl1
+Gnat3
+Gata3
+Gata2
+Scg2
+Fakegene
+Pzp
+Aanat
+Aatk
+Aatk
+Aatk
+Abca1
+Abca4
+Abca2
