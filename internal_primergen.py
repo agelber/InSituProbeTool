@@ -22,7 +22,7 @@ outs=open(args.output_dir.rstrip("/")+"/newprimers.csv", "w")
 for gene in content:
     gis=gene[0]
     Entrez.email = 'alon.gelber@childrens.harvard.edu'
-    ## We instead upload the list of ID beforehand
+  
 
     request = Entrez.epost("nucleotide",id=gis)
     result = Entrez.read(request)
@@ -30,7 +30,7 @@ for gene in content:
     queryKey = result["QueryKey"]
     handle = Entrez.efetch(db="nucleotide",retmode="xml", webenv=webEnv, query_key=queryKey)
     for r in Entrez.parse(handle):
-        # Grab the GI
+       
         try:
             gi=int([x for x in r['GBSeq_other-seqids'] if "gi" in x][0].split("|")[1])
         except ValueError:
